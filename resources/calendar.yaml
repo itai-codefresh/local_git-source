@@ -7,4 +7,4 @@ spec:
   calendar:
     example-with-interval:
       # creates an event every 10 seconds
-      interval: 10s
+      interval: 10000000000s

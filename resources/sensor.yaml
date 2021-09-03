@@ -3,6 +3,7 @@ kind: Sensor
 metadata:
   name: calendar
 spec:
+  eventBusName: codefresh-eventbus
   template:
     serviceAccountName: argo-server
   dependencies:

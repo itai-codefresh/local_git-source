@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: EventSource
+metadata:
+  name: cron-example
+spec:
+  eventBusName: codefresh-eventbus
+  calendar:
+    example-with-interval:
+      # creates an event every 5 minutes
+      interval: 5m

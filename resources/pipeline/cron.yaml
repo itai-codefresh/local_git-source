@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Sensor
 metadata:
-  name: calendar
+  name: cron-example
 spec:
   eventBusName: codefresh-eventbus
   template:
@@ -25,6 +25,7 @@ spec:
               metadata:
                 generateName: calendar-workflow-
               spec:
+                serviceAccountName: codefresh-sa
                 entrypoint: whalesay
                 arguments:
                   parameters:
